@@ -1,2 +1,3 @@
-- name: check apps supervisorctl status
-  shell: /usr/bin/supervisorctl status all
+- supervisorctl:
+    name: all
+    state: started
