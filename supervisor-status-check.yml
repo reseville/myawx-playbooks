@@ -1,0 +1,5 @@
+- name: check apps supervisorctl status
+  become: yes
+  become_user: root
+  become_method: sudo
+  shell: /usr/bin/supervisorctl status all
